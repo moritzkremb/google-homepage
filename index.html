@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            overflow: hidden;
+        }
+    
+        li {
+            float: right;
+            font-family: Arial;
+        }
+    
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+    
+        li a:hover {
+            text-decoration-line: underline;
+            color: silver;
+        }
+        
+        #box-container {
+            height: 500px;
+            width: 500px;
+            margin: auto;
+        }
+    
+        #logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    
+        #favorites {
+            background-color: orangered;
+            width: 50%;
+            height: 50%;
+            margin: auto;
+        }
+    
+        #menu-button {
+            width: 20px;
+            height: 20px;
+        }
+    
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li><a href="#"><img id="menu-button" src="./images/user.png"></a></li>
+            <li><a href="#"><img id="menu-button" src="./images/menubutton.png"></a></li>
+            <li><a href="#">Images</a></li>
+            <li><a href="#">Gmail</a></li>
+        </ul>
+    </div>
+    <div id="box-container">
+    
+        <img id="logo" 
+                src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
+                alt="logo">
+        <form action="/submit-query">
+                    <input type="text">
+                    
+        </form>
+        <div id="favorites">
+            
+        </div>
+    </div>
+</body>
